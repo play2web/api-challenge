@@ -1,0 +1,41 @@
+@import '../../../sass/_variables';
+
+:host {
+  .character-item {
+    height: 200px;
+    overflow: hidden;
+    min-height: 200px;
+  }
+
+  .characters-search {
+    margin-top: 46px;
+
+    .characters-search-input {
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid $image-bg;
+      background-color: transparent;
+      color: $white;
+      width: 40%;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      transition: all .5s ease;
+      float: right;
+      font-size: 20px;
+
+      &:focus {
+        width: 60%;
+        box-shadow: none;
+      }
+    }
+
+    .input-group-addon {
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid $image-bg;
+      background-color: transparent;
+      color: $image-bg;
+      font-size: 18px;
+    }
+  }
+}

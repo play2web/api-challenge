@@ -1,0 +1,82 @@
+// Imagehover.css overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values without modifying source files.
+@import "variables";
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #000;
+}
+
+[class*="col-"] {
+  padding: 4px !important;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.centered {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  padding-top: 20px;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+figcaption h2 {
+  color: $white !important;
+}

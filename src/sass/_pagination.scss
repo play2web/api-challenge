@@ -1,0 +1,35 @@
+@import "variables";
+
+pagination-controls {
+  .ngx-pagination {
+    text-align: center;
+    margin-top: 40px;
+
+    a, button, .current, .disabled {
+      color: $white;
+      font-size: 20px;
+      background-color: $image-bg;
+    }
+
+    .current {
+      background-color: $white;
+      color: $image-bg;
+    }
+
+    .disabled {
+      &:hover, &:active, &:focus {
+        background-color: $image-bg;
+        color: $white;
+      }
+    }
+
+    a, button {
+      &:hover, &:active, &:focus {
+        background-color: $white;
+        color: $image-bg;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
